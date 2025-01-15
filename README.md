@@ -1,21 +1,23 @@
 
-# NEGCDTI
-NEGCDTI: Neighborhood-Enhanced Graph Contrastive Learning for Drug-Target Interaction Prediction with Hierarchical Representation
+# GMJRL
+GMJRL: Geometry-enhanced Multi-scale Joint Representation Learning for Drug-Target Interaction Prediction
 
 ##### Dependencies：
 
-- python == 3.8.18
-- pytorch == 1.12.1
-- torchvision == 0.13.1
-- cudatoolkit == 11.3.1
-- numpy == 1.24.3
-- pandas == 2.0.3
-- matplotlib == 3.7.2
-- scikit-learn == 1.3.2
-- scipy == 1.10.1
-- biotite == 0.33.0
-- rdkit == 2023.9.1
-- timm == 0.9.16
+- python = 3.8.18
+- pytorch = 1.12.1
+- torchvision = 0.13.1
+- cudatoolkit = 11.3.1
+- rdkit = 2023.9.1
+- torch-cluster = 1.6.0+pt112cu113
+- torch-scatter = 2.10+pt112cu113
+- torch-sparse = 0.6.16+pt112cu113
+- torch-spline-conv = 1.2.1+pt112cu113
+- torch-geometric = 2.4.0
+- networkx = 3.1
+- torchdrug = 0.2.1
+- bio = 1.6.2
+- openpyxl = 3.1.2
 
 ##### Using
 
