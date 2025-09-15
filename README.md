@@ -22,8 +22,20 @@ GMJRL: Geometry-enhanced Multi-scale Joint Representation Learning for Drug-Targ
 ##### Using
 
 1. `Data` stores four datasets.
-2. `smile_to_features.py` generates chemical text information. 
-3. `smiles_k_gram.py` lets the chemical text be divided into words according to the k-gram method. 
-4. `protein_k_gram` lets the protein sequences be divided into words according to the k-gram method. 
-5. `cluster.py` stores the neighborhood-enhanced graph contrastive learning algorithm.
-6. `main.py` trains NEGCDTI model.
+2. `protein_structrue` stores target graphs. 
+3. `create_drug_feat.py` is used to ​​extract structural features from drug molecules (represented as SMILES)​​ and convert them into a format suitable for processing by ​​Graph Neural Networks​​. 
+4. `main.py` trains GMJRL model.
+
+##### Training
+
+If you use the data we provide, you can run main.py directly.
+
+For a new dataset, you need to prepare the following files:
+1. drugs.xlsx: This file stores the SMILES string information of the drugs.
+2. targets.xlsx: This file stores the Fasta sequence information of the targets.
+3. dti_mat.xlsx: This file stores the interaction information between drugs and targets.
+4. protein_structrue: This file stores target graphs.
+
+Next, you need to run the following scripts:
+1. Run create_drug_feat.py to extract structural features and convert them into a format suitable for processing by ​​Graph Neural Networks​​.
+2. Run main.py to train the GMJRL model.
